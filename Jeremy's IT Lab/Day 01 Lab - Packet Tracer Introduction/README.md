@@ -16,4 +16,6 @@ This lab introduces the Cisco Packet Tracer environment and walks through buildi
 * Connecting devices
 * Exploring **Real-Time** vs **Simulation** mode
 
+![Topology](./topology.png)
+
 Source: https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3
