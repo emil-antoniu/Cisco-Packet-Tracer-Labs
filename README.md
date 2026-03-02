@@ -1,3 +1,3 @@
-### Daily practice within Cisco Packet Tracer.
+### Cisco Packet Tracer Labs
 
-- Hoping to develop practical skills and deepen my understanding of networking through exercises.
+- Hoping to deepen my understanding of networking through these various labs.
