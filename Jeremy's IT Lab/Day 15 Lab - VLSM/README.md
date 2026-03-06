@@ -32,4 +32,4 @@ This lab practices **Variable Length Subnet Masking (VLSM)** to divide a single 
 
 ![Ping](./example-pc1-to-pc4.png)
 
-Source: https://www.youtube.com/watch?v=Rn_E1Qv8--I
+Source: https://www.youtube.com/watch?v=Rn_E1Qv8--I&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=28&pp=iAQB
