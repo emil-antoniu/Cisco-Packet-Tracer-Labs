@@ -3,6 +3,8 @@
 ## Overview
 This lab walks us through configuring EIGRP.
 
+![Topology](./images/topology.png)
+
 ## Key Activities
 - Configure all routers within the same Autonomous System.
 - Configure loopbacks as a best practice. Dynamic routing protocols require routers to have IDs, and the ID can stay consistent by configuring a loopback IP, as it will automatically get chosen as the ID over other interface IPs, even if the physical interfaces go down (loopback is logical).
@@ -19,7 +21,7 @@ R1(config-if)#ip address 10.0.12.1 255.255.255.252
 R1(config)#interface fastEthernet 1/0
 R1(config-if)#ip address 10.0.13.1 255.255.255.252
 ```
-![R1 Configuration 1](./r1-conf-1.png)
+![R1 Configuration 1](./images/r1-conf-1.png)
 
 ```R2
 R2(config)#hostname R2
@@ -30,7 +32,7 @@ R2(config-if)#ip address 10.0.12.2 255.255.255.252
 R2(config)#interface fastEthernet 1/0
 R2(config-if)#ip address 10.0.24.1 255.255.255.252
 ```
-![R2 Configuration 1](./r2-conf-1.png)
+![R2 Configuration 1](./images/r2-conf-1.png)
 
 ```R3
 R3(config)#hostname R3
@@ -41,7 +43,7 @@ R3(config-if)#ip address 10.0.13.2 255.255.255.252
 R3(config)#interface fastEthernet 2/0
 R3(config-if)#ip address 10.0.34.1 255.255.255.252
 ```
-![R3 Configuration 1](./r3-conf-1.png)
+![R3 Configuration 1](./images/r3-conf-1.png)
 
 ```R4
 R4(config)#hostname R4
@@ -55,7 +57,7 @@ R4(config-if)#ip address 10.0.34.2 255.255.255.252
 R4(config)#interface gigabitEthernet 0/0
 R4(config-if)#ip address 192.168.4.254 255.255.255.0
 ```
-![R4 Configuration 1](./r4-conf-1.png)
+![R4 Configuration 1](./images/r4-conf-1.png)
 
 ### Step 2 - Loopback interfaces
 ```R1
@@ -90,7 +92,7 @@ R1(config-router)#passive-interface loopback 0
 
 R1(config-router)#no auto-summary 
 ```
-![R1 Config 3](./r1-conf-3.png)
+![R1 Config 3](./images/r1-conf-3.png)
 
 ```R2
 R2(config)#router eigrp 100
@@ -103,7 +105,7 @@ R2(config-router)#passive-interface loopback 0
 
 R2(config-router)#no auto-summary 
 ```
-![R2 Conf 3](./r2-conf-3.png)
+![R2 Conf 3](./images/r2-conf-3.png)
 
 ```R3
 R3(config)#router eigrp 100
@@ -116,7 +118,7 @@ R3(config-router)#passive-interface loopback 0
 
 R3(config-router)#no auto-summary 
 ```
-![R3 Conf 3](./r3-conf-3.png)
+![R3 Conf 3](./images/r3-conf-3.png)
 
 ```R4
 R4(config)#router eigrp 100
@@ -130,8 +132,8 @@ R4(config-router)#passive-interface gigabitEthernet 0/0
 
 R4(config-router)#no auto-summary 
 ```
-![R4 Config 3](./r4-conf-3.png)
-![R4 Config 3 Routes](./r4-conf-3-routes.png)
+![R4 Config 3](./images/r4-conf-3.png)
+![R4 Config 3 Routes](./images/r4-conf-3-routes.png)
 
 ### Step 4 - Configure unequal-cost load-balancing on R1
 ```R1
